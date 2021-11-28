@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.huiaong</groupId>
     <artifactId>base64-multipartfile-starter</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
     <name>Base64MultipartFile</name>
     <description>Base64MultipartFile</description>
     <properties>
@@ -62,7 +62,7 @@
 
     <profiles>
         <profile>
-            <id>default</id>
+            <id>release</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
