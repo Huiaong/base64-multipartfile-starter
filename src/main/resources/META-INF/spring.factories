@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.huiaong.base64.multipartfile.starter.JacksonConfiguration

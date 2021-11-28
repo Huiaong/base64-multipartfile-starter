@@ -1,10 +1,12 @@
 package com.huiaong.base64.multipartfile.starter.multipart;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.util.UUID;
 
+@JsonDeserialize(using = Base64MultipartFileSerializer.class)
 public class Base64MultipartFile implements MultipartFile {
 	private final byte[] imgContent;
 	private final String name;
