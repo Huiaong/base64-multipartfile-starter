@@ -12,11 +12,10 @@ public class Base64MultipartFile implements MultipartFile {
 	private final String name;
 	private final String contentType;
 
-	public Base64MultipartFile(byte[] imgContent, String name) {
+	public Base64MultipartFile(byte[] imgContent, String contentType, String suffix) {
 		this.imgContent = imgContent;
-		String head = name.split(";")[0];
-		this.name = UUID.randomUUID().toString().replace("-", "") + "." + head.split("/")[1];
-		this.contentType = head.split(":")[1];
+		this.name = UUID.randomUUID().toString().replace("-", "") + suffix;
+		this.contentType = contentType;
 	}
 
 	@Override
